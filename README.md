@@ -45,7 +45,7 @@ Demonstrates how Docker volumes allow data to persist beyond container lifetimes
 The file `data.txt` was created in `/app_data` inside `volume_container`.  
 After removing the container and running `new_container` with the same volume, the file still exists:
 
-![Data Persistence](screenshots/data_persisted.png)
+`screenshots/data_persisted.png`
 
 ---
 
@@ -53,7 +53,7 @@ After removing the container and running `new_container` with the same volume, t
 
 Containers `web` and `app` on the custom network `my_network` can communicate using container names:
 
-![Networking Test](screenshots/container_communication.png)
+`screenshots/container_communication.png`
 
 ---
 
