@@ -59,7 +59,7 @@ Containers `web` and `app` on the custom network `my_network` can communicate us
 
 ## Architecture Diagram
 
-    +-------------------+
+      +-------------------+
     |   Docker Network  |
     |    "my_network"   |
     +-------------------+
@@ -74,6 +74,7 @@ Containers `web` and `app` on the custom network `my_network` can communicate us
   |   Volume: my_volume      |
   |  Mounted at /app_data    |
   +--------------------------+
+
 
 ---
 
