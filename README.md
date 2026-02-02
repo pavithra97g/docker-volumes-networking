@@ -59,21 +59,22 @@ Containers `web` and `app` on the custom network `my_network` can communicate us
 
 ## Architecture Diagram
 
-      +-------------------+
-    |   Docker Network  |
-    |    "my_network"   |
-    +-------------------+
-     |         |       |
-  +-------+ +-------+ +------+
-  | web   | | app   | | db   |
-  +-------+ +-------+ +------+
-                 |
-            Alias: database
-                 |
-  +--------------------------+
-  |   Volume: my_volume      |
-  |  Mounted at /app_data    |
-  +--------------------------+
+          +-------------------------+
+          |      Docker Network     |
+          |        "my_network"    |
+          +-------------------------+
+           |           |           |
+       +-------+   +-------+   +-------+
+       | web   |   | app   |   | db    |
+       +-------+   +-------+   +-------+
+                        |
+                   Alias: database
+                        |
+          +---------------------------+
+          |       Volume: my_volume   |
+          |     Mounted at /app_data  |
+          +---------------------------+
+
 
 
 ---
